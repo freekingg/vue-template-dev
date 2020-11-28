@@ -12,11 +12,12 @@ module.exports = {
     'max-len': 0,
     'camelcase': 0, // 变量可以用下划线
     'no-plusplus': 0, // 禁止使用++，--
-    'guard-for-in': 0,
     'no-extra-semi': 0, // 和prettier冲突
     'import/extensions': 0, // import不需要写文件扩展名
+    'no-underscore-dangle': 0, // 下划线
+    'prefer-const':1,
     'import/no-unresolved': 0,
-    'no-underscore-dangle': 0, // 无下划线
+    'guard-for-in': 0,
     'no-restricted-syntax': 0,
     'consistent-return': 'off',
     'semi': ['error', 'never'],
