@@ -6,11 +6,9 @@
 </template>
 
 <script>
-let s = 10
-s = 20
-console.log(s)
 export default {
   name: 'App',
+  created() {},
 }
 </script>
 

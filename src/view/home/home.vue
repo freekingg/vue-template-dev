@@ -6,7 +6,7 @@
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
-    <el-button>默认按钮</el-button>
+    <el-button @click="testhandle">默认按钮</el-button>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -48,12 +48,16 @@
 </template>
 
 <script>
-const _name = 'xxx'
-console.log(_name)
 export default {
   name: 'home',
   props: {
     msg: String,
+  },
+  created() {
+    this.$sentry.log('home')
+  },
+  methods: {
+    testhandle() {},
   },
 }
 </script>
