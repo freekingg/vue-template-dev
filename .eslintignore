@@ -1,0 +1,10 @@
+/builds/
+/public/
+/dist/
+/script/
+postcss*.js
+babel*.js
+vue.config.js
+node_modules/
+manifest.json
+pages.json

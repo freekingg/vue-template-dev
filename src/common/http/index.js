@@ -2,8 +2,8 @@
 import Vue from 'vue'
 import axios from 'axios'
 import Config from '@/config'
-import store from '@/store'
-import { getToken, saveAccessToken } from '@/common/util/token'
+import store from '@/common/store'
+import { getToken, saveAccessToken } from '@/common/utils/token'
 
 const config = {
   baseURL: Config.baseURL || process.env.apiUrl || '',

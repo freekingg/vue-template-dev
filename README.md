@@ -30,7 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 代码质量及配置
 
-为防止将存在潜在问题的代码带到线上环境，最好的办法是在本地提交代码时就能够扫描出潜在的错误，并强制将其修改后才能提交，这样就不会将问题代码携带到线上，就能保证线上代码至少不会存在低级的程序错误。针对这样的诉求，可以采用 husky、lint-staged、eslint、Airbnb 以及 prettier 插件来实现
+为防止将存在潜在问题的代码带到线上环境，本方案采用在本地提交代码时扫描出潜在的错误，并强制将其修改后才能提交，避免将问题代码携带到线上，保证线上代码不会存在低级的程序错误。所以采用 husky、lint-staged、eslint、Airbnb 以及 prettier 插件来实现
 
 **eslint**
 语法规则和代码风格的检查工具
@@ -44,7 +44,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 **Airbnb**
 Airbnb 是其中一個最流行的 JavaScript 代碼規範
 
-#### VSCode 配置 ESLint + Prettier 及修复
+#### VSCode 配置 ESLint + Prettier 及自动修复
+
+> **推荐使用 vscode 编辑器**
+
+针对 vscode 编辑器进行相关自动化配置与检测，可在代码保存时自动按约定的风格进行格式化与修复
 
 - 使用 `eslint`+`husky`+`prettier`+`lint-staged`提升前端应用质量
 
@@ -57,6 +61,7 @@ Airbnb 是其中一個最流行的 JavaScript 代碼規範
 - `@vue/cli-plugin-babel`
 - `@vue/cli-plugin-eslint`
 - `@vue/eslint-config-airbnb`
+- `@vue/eslint-config-prettier`
 - `prettier`
 - `eslint`
 - `eslint-plugin-vue`
@@ -64,7 +69,8 @@ Airbnb 是其中一個最流行的 JavaScript 代碼規範
 - `lint-staged`
 - `husky`
 
-####　 package.json
+#### package.json
+
 git-hook 钩子 提交校验配置
 
 ```js
@@ -96,7 +102,7 @@ git-hook 钩子 提交校验配置
 }
 ```
 
-#####　.prettierrc.js
+##### .prettierrc.js
 
 ```js
 module.exports = {

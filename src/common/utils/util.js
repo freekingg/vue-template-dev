@@ -14,6 +14,7 @@ Utils.cutString = (str, len) => {
   }
   let strlen = 0
   let s = ''
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < str.length; i++) {
     // eslint-disable-line
     s += str.charAt(i)

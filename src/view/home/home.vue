@@ -48,8 +48,6 @@
 </template>
 
 <script>
-const _name = 'xxx'
-console.log(_name)
 export default {
   name: 'home',
   props: {

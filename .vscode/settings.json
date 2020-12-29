@@ -5,17 +5,15 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.tabSize": 2,
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.run": "onSave",
   "prettier.packageManager": "yarn",
-  "eslint.validate": [
-    "vue",
-    "javascript",
-    "html",
-    "javascriptreact"
-  ],
+  "eslint.validate": ["vue", "javascript", "html", "javascriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
