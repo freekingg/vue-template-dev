@@ -7,5 +7,8 @@
 <script>
 export default {
   name: 'login',
+  created() {
+    this.$sentry.log('looginlooginlooginloogin')
+  },
 }
 </script>
